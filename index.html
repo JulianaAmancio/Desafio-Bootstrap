@@ -9,40 +9,44 @@
     <title>Pipoco do Trovão</title>
 </head>
 
-<body class="p-3 mb-2 bg-secondary text-white">
-    <h1 class="text-center mb-4">Pipoco do Trovão</h1>
-    
-    <div class="container-fluid d-flex justify-content-md-center">
-        <div class="row-9">
-            <h2 class="text-dark text-center mb-2">Login</h2>
-            <form class="border rounded p-3 mb-2 bg-light text-dark">
-                <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite o seu email">
-                
-                </div>
-                <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="digite a sua senha" >
-                </div>
-                <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
-                </div>
-                <button type="button" class="btn btn-primary" id="liveAlertBtn">Entrar</button>
-                <button type="submit" class="btn btn-danger">Resetar</button>
-                
-            </form>
-            <div id="liveAlertPlaceholder"></div>
+<body >
+    <header>
+        <nav class="bg-light ">
+            <div class="container-fluid d-flex flex-column justify-content-center">
+              <h1 class="text-center" >Pipoco do Trovão</h1>
+              <span class="text-center">Marketplace</span>
+            </div>
+          </nav>   
+    </header>     
+    <!--Formulario  -->
+    <main>
+        <div class="container-fluid d-flex justify-content-center ">
+            <div class="row">
+               <div class="col">
+                    <h2 class="text-dark text-center pt-5 mb-2">Login</h2>
+                    <form class="border rounded p-3 mb-2 bg-light text-dark">
+                        <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite o seu email">                     
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="digite a sua senha" >
+                        </div>
+                        <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Entrar</button>
+                        <button type="submit" class="btn btn-danger">Resetar</button>                      
+                    </form>
+                    <div id="liveAlertPlaceholder"></div>
+               </div>    
+            </div>            
+        </div>    
+    </main>
 
-        </div>
-        
-    </div>
-
-
-
-
-
+    <!--Scrip JS  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
    crossorigin="anonymous"></script>
