@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+    <title>Pipoco do Trovão</title>
+</head>
+<body>
+   <header>
+    <!-- menu de navegação -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Pipoco do Trovão</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gerenciamento de estoque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rastreio de Entregas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Logout</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- titulo -->
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="pt-5 pb-3 ">
+                        <h1 class="text-primary border-bottom border-primary pb-3">Gerenciamento de estoque</h1>
+                    </div>
+                </div>
+            </div>
+    <!-- cadastrar produtos  -->
+    <!-- button trigger modal -->
+            <div class="container-fluid">
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Cadastrar Produtos
+                    </button>
+                    <button type="button" class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Ver Produtos
+                    </button>            
+    <!-- Modal cadastrar -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cadastro de Produtos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form >                                   
+                                        <div class="mb-3">
+                                            <label for="produtos" class="form-label">Produto</label>
+                                            <input type="texto" class="form-control" id="text" aria-describedby="emailHelp" >                     
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="preço" class="form-label">Preço</label>
+                                            <input type="text" class="form-control" id="Preco" >
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="quantidade" class="form-label">Quantidade</label>
+                                            <input type="number" class="form-control" id="quantidade" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlFile1"></label>
+                                            <input type="file" class="form-control-file pb-3 pt-3" id="exampleFormControlFile1">
+                                        </div>
+                                </div>
+                                <div class="modal-footer">                       
+                                    <button type="button" class="btn btn-primary">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <!-- Modal Produtos --> 
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> Produtos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid pt-5">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Produto</th>
+                                                <th scope="col">Preço</th>
+                                                <th scope="col">Imagem</th>                       
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Produto 1</td>
+                                            <td>R$0.40</td>
+                                            <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Produto 2</td>
+                                            <td>R$30.00</td>
+                                            <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Produto 3</td>
+                                            <td>R$1.20</td>
+                                            <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+   <!--Tabela de produtos  -->
+                <div class="container-fluid pt-5">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Produto</th>
+                                    <th scope="col">Preço</th>
+                                    <th scope="col">Qtd.</th>
+                                    <th scope="col">Excluir</th>                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Produto 1</td>
+                                <td>R$0.40</td>
+                                <td>30</td>
+                                <td><button type="button" class="btn btn-danger btn-sm ">Excluir</button></td>                                   
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Produto 2</td>
+                                <td>R$30.00</td>
+                                <td>3</td>
+                                <td><button type="button" class="btn btn-danger btn-sm">Excluir</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Produto 3</td>
+                                <td>R$1.20</td>
+                                <td>20</td>
+                                <td><button type="button" class="btn btn-danger btn-sm" id="">Excluir</button></td>
+                            </tr>
+                            </tbody>
+                        </table>                        
+                    </div>   
+            </div>        
+        </main>
+   </header>
+
+<!--Scrip JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+   crossorigin="anonymous"></script>    
+</body>
+</html>
