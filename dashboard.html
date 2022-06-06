@@ -33,25 +33,19 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-    <!-- titulo -->
+        </nav>         
+    <!-- Botão de cadastrar produtos  -->
+    <!-- button trigger modal -->
         <main>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="pt-5 pb-3 ">
-                        <h1 class="text-primary border-bottom border-primary pb-3">Gerenciamento de estoque</h1>
+                    <div class="pt-5 pb-3 d-grid gap-2 col-6 mx-auto">
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Cadastrar Produtos
+                        </button>
                     </div>
                 </div>
-            </div>
-    <!-- cadastrar produtos  -->
-    <!-- button trigger modal -->
-            <div class="container-fluid">
-                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Cadastrar Produtos
-                    </button>
-                    <button type="button" class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        Ver Produtos
-                    </button>            
+          </div>                                          
     <!-- Modal cadastrar -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -84,50 +78,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-    <!-- Modal Produtos --> 
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel"> Produtos</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="container-fluid pt-5">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Produto</th>
-                                                <th scope="col">Preço</th>
-                                                <th scope="col">Imagem</th>                       
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Produto 1</td>
-                                            <td>R$0.40</td>
-                                            <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Produto 2</td>
-                                            <td>R$30.00</td>
-                                            <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Produto 3</td>
-                                            <td>R$1.20</td>
-                                            <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>                                                                
-                            </div>
-                        </div>
-                    </div>
+                    </div>    
    <!--Tabela de produtos  -->
                 <div class="container-fluid pt-5">
                         <table class="table">
@@ -184,8 +135,57 @@
                             </tbody>
                         </table>                        
                     </div>   
-            </div>        
-        </main>
+               </div>
+<!--Botão Produtos -->
+               <div class="ps-3 pt-5">
+                    <button type="button" class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Ver Produtos
+                    </button>
+               </div>
+<!-- Modal Produtos --> 
+               <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"> Produtos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="container-fluid pt-5">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">Preço</th>
+                                        <th scope="col">Imagem</th>                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Produto 1</td>
+                                    <td>R$0.40</td>
+                                    <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Produto 2</td>
+                                    <td>R$30.00</td>
+                                    <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Produto 3</td>
+                                    <td>R$1.20</td>
+                                    <td><img src="https://i.picsum.photos/id/809/100/100.jpg?hmac=FtF2LpYnk8pSlBDlD_lKX5WbiqOFSdx5SVTzcfNq1TY" class="rounded float-left" alt="..."></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>                                                                
+                    </div>
+                </div>
+            </div>               
+      </main>
    </header>
 <!--Scrip JS  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
